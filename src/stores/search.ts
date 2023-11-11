@@ -6,7 +6,7 @@ export const useSearchStore = defineStore('search', () => {
   const results = ref([])
   //const doubleCount = computed(() => count.value * 2)
   async function performSearch(term: string) {
-    const response = await fetch(options.baseURL + 'search?search=' + term)
+    const response = await fetch(options.baseURL + 'api/v1/search?search=' + term)
 
     const responseData = await response.json()
 
