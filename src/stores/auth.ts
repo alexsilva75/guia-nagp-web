@@ -42,20 +42,7 @@ export const useAuthStore = defineStore({
       this.setAuthError(false)
       this.setAuthErrorDescription('')
       try {
-        /**Obtem o cookie do servico de autenticacao do Laravel  */
-
-        //const csrfCookieResponse = await axios.get(`${options.baseURL}sanctum/csrf-cookie`)
-
-        //console.log('Cookies: ', csrfCookieResponse)
-
-        //if (csrfCookieResponse.status === 204) {
-        // console.log('RECEIVED CSRF COOKIE')
         await this.login(username, password)
-        // } else {
-        //   //throw new Error(`Erro ao tentar estabelecer sessão.`);
-        //   this.setAuthError(true)
-        //   this.setAuthErrorDescription('Não foi possível estabelecer uma sessão com o servidor.')
-        // }
       } catch (error) {
         console.log(error)
         throw error
@@ -75,9 +62,9 @@ export const useAuthStore = defineStore({
               headers: {
                 Accept: 'application/json',
                 'X-Requested-With': 'XMLHttpRequest'
-              },
-              xsrfCookieName: 'XSRF-TOKEN',
-              xsrfHeaderName: 'X-XSRF-TOKEN'
+              }
+              // xsrfCookieName: 'XSRF-TOKEN',
+              // xsrfHeaderName: 'X-XSRF-TOKEN'
               //withCredentials: true
             }
           )
@@ -97,27 +84,27 @@ export const useAuthStore = defineStore({
                 this.setAuthErrorDescription(errors['username'][0])
               }
             }
-            if (error.response.status === 404) {
-              await this.logout()
-              const response = await axios
-                .post(
-                  `${options.baseURL}login`,
-                  {
-                    email,
-                    password
-                  },
-                  {
-                    headers: {
-                      Accept: 'application/json',
-                      'X-Requested-With': 'XMLHttpRequest'
-                    }
-                    // withCredentials: true
-                  }
-                )
-                .catch((error) => {
-                  this.setAuthError(true)
-                })
-            }
+            // if (error.response.status === 404) {
+            //   await this.logout()
+            //   const response = await axios
+            //     .post(
+            //       `${options.baseURL}login`,
+            //       {
+            //         email,
+            //         password
+            //       },
+            //       {
+            //         headers: {
+            //           Accept: 'application/json',
+            //           'X-Requested-With': 'XMLHttpRequest'
+            //         }
+            //         // withCredentials: true
+            //       }
+            //     )
+            //     .catch((error) => {
+            //       this.setAuthError(true)
+            //     })
+            // }
           })) as any
 
         console.log('Login Response: ', response)
@@ -133,32 +120,43 @@ export const useAuthStore = defineStore({
       }
     },
 
-    async tryAutoLogin() {
-      //
+    tryLoadAuthData() {
       const user = localStorage.getItem('user')
       const token = localStorage.getItem('token')
       const tokenCreatedAt = localStorage.getItem('tokenCreatedAt')
-
-      console.log('Auto Login token: ', token)
-
-      if (!user || !token) {
-        localStorage.clear()
-        router.push('/')
-      } else {
+      if (user && token && tokenCreatedAt) {
         const parsedUser = JSON.parse(user)
         this.setAuthUser({
           user: parsedUser,
           token,
           tokenCreatedAt
         })
-        router.push('/dashboard')
+      }
+    },
+
+    async tryAutoLogin() {
+      //
+      this.tryLoadAuthData()
+
+      const user = this.authUser
+
+      const token = this.token
+
+      if (!this.token) {
+        console.log('I DO NOT HAVE A TOKEN')
+
+        console.log('Auto Login token: ', token)
+
+        if (!user || !token) {
+          localStorage.clear()
+        }
       }
     },
 
     async logout() {
       const response = await axios
         .post(
-          `${options.baseURL}/api/v1/auth/logout`,
+          `${options.baseURL}/api/v1/logout`,
           {},
           {
             headers: {
@@ -186,7 +184,12 @@ export const useAuthStore = defineStore({
     },
 
     setAuthUser(authData: any) {
-      const tokenCreationDatetime = Date.parse(authData.tokenCreatedAt)
+      let tokenCreationDatetime = null
+      if (authData.tokenCreatedAt) {
+        tokenCreationDatetime = Date.parse(authData.tokenCreatedAt)
+      } else {
+        tokenCreationDatetime = Date.parse(authData.tokenInfo.accessToken.created_at)
+      }
 
       const tokenExpirationDatetime = new Date(
         tokenCreationDatetime + 120 * 60 * 1000 // O token tem vida de 2 horas. Aqui se converte para milisegundos
@@ -206,7 +209,7 @@ export const useAuthStore = defineStore({
         if (authData.user) {
           localStorage.setItem('user', JSON.stringify(this.authUser))
           localStorage.setItem('token', this.token)
-          localStorage.setItem('tokenCreatedAt', authData.tokenCreatedAt)
+          localStorage.setItem('tokenCreatedAt', authData.tokenInfo.accessToken.created_at)
         } else {
           localStorage.clear()
         }
