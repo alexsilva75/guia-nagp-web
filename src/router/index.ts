@@ -20,8 +20,9 @@ const router = createRouter({
       component: LoginView
     },
     {
-      path: '/post',
+      path: '/post/:postId',
       name: 'post',
+      props: true,
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -46,9 +47,9 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const authStore = useAuthStore()
 
-  console.log('AUTH STORE: ', authStore.token)
-  console.log('META: ', to.meta)
-  console.log('TO: ', to)
+  // console.log('AUTH STORE: ', authStore.token)
+  // console.log('META: ', to.meta)
+  // console.log('TO: ', to)
   if (to.meta.requiresAuth) {
     console.log('REQUIRES AUTH')
   }

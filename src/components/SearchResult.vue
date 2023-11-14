@@ -20,6 +20,7 @@ watch(
       v-bind:key="(result as any).id"
       v-for="result in searchStore.results"
       :title="(result as any).title.rendered"
+      :id="(result as any).id"
     />
   </div>
 </template>

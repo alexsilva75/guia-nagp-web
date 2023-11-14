@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useCategoryStore } from '@/stores/category'
+
+const categoryStore = useCategoryStore()
+</script>
 <template>
   <div
     class="offcanvas offcanvas-start text-light"
@@ -16,11 +21,13 @@
     </div>
     <div class="offcanvas-body">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item text-light">An item</li>
-        <li class="list-group-item text-light">A second item</li>
-        <li class="list-group-item text-light">A third item</li>
-        <li class="list-group-item text-light">A fourth item</li>
-        <li class="list-group-item text-light">And a fifth one</li>
+        <li
+          v-bind:key="(category as any).id"
+          v-for="category in categoryStore.categories"
+          class="list-group-item text-light"
+        >
+          {{ (category as any).name }}
+        </li>
       </ul>
     </div>
   </div>

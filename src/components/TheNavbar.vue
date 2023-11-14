@@ -9,7 +9,7 @@ import IconMenu from './icons/IconMenu.vue'
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand text-light" href="#"
+      <RouterLink to="/" class="navbar-brand text-light" href="#"
         ><button
           class="btn"
           type="button"
@@ -18,7 +18,7 @@ import IconMenu from './icons/IconMenu.vue'
           aria-controls="offcanvasRight"
         >
           <IconMenu /></button
-        >Guia NAGP</a
+        >Guia NAGP</RouterLink
       >
       <!-- <button
         class="navbar-toggler"
