@@ -9,7 +9,7 @@ const searchTerm = ref('')
 const doSearch = () => {
   searchStore.performSearch(searchTerm.value)
 }
-const timerId = ref(0)
+const timerId = ref<any>()
 const onSearchTypeHander = () => {
   //console.log('Search Term Length: ', searchTerm.value.length)
   if (timerId.value) {

@@ -18,14 +18,14 @@ const categoryStore = useCategoryStore()
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <div v-if="searchStore.isLoadingSearch" class="mb-5">
-          <TheSpinner />
-        </div>
-        <SearchResult v-else />
+      <div v-if="searchStore.isLoadingSearch" class="mb-5">
+        <TheSpinner />
       </div>
+      <SearchResult v-else />
     </div>
 
-    <CategoryListVue :categories="categoryStore.categories as any" />
+    <div class="row">
+      <CategoryListVue :categories="categoryStore.categories as any" />
+    </div>
   </div>
 </template>

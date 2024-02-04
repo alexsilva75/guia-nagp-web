@@ -1,7 +1,18 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 import { useCategoryStore } from '@/stores/category'
 
 const categoryStore = useCategoryStore()
+const router = useRouter()
+const closeDrawerAndNavigate = (categoryId: number) => {
+  console.log('Category ID: ', categoryId)
+  const closeButton = document.querySelector('.btn-close') as HTMLButtonElement
+
+  closeButton.click()
+  console.log('Button: ', closeButton)
+
+  router.push({ name: 'category', params: { categoryId } })
+}
 </script>
 <template>
   <div
@@ -26,7 +37,9 @@ const categoryStore = useCategoryStore()
           v-for="category in categoryStore.categories"
           class="list-group-item text-light"
         >
-          {{ (category as any).name }}
+          <a @click="closeDrawerAndNavigate((category as any).id)" class="nav-link" href="#">
+            {{ (category as any).name }}</a
+          >
         </li>
       </ul>
     </div>

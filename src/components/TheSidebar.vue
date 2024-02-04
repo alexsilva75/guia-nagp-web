@@ -2,9 +2,9 @@
 import axios from 'axios'
 import { onMounted } from 'vue'
 import { RouterLink } from 'vue-router'
-import { useAuthStore } from '@/stores/auth'
+// import { useAuthStore } from '@/stores/auth'
 
-const authStore = useAuthStore()
+// const authStore = useAuthStore()
 
 onMounted(() => {})
 
@@ -32,23 +32,23 @@ async function getUser() {
     </a>
     <hr />
     <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a href="#" @click="getUser" class="nav-link active" aria-current="page">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#home" /></svg>
           Home
         </a>
+      </li> -->
+      <li>
+        <RouterLink to="/search-terms" class="nav-link text-white">
+          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+          Termos / Palavras-chave
+        </RouterLink>
       </li>
       <li>
         <a href="#" class="nav-link text-white">
           <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
           Log de Pesquisas
         </a>
-      </li>
-      <li>
-        <RouterLink to="/search-terms" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table" /></svg>
-          Termos / Palavras-chave
-        </RouterLink>
       </li>
     </ul>
     <hr />

@@ -209,7 +209,12 @@ export const useAuthStore = defineStore({
         if (authData.user) {
           localStorage.setItem('user', JSON.stringify(this.authUser))
           localStorage.setItem('token', this.token)
-          localStorage.setItem('tokenCreatedAt', authData.tokenInfo.accessToken.created_at)
+          localStorage.setItem(
+            'tokenCreatedAt',
+            authData.tokenCreatedAt
+              ? authData.tokenCreatedAt
+              : authData.tokenInfo.accessToken.created_at
+          )
         } else {
           localStorage.clear()
         }

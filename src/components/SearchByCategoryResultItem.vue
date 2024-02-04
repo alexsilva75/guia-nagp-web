@@ -11,7 +11,7 @@ defineProps<{
       <h5 class="card-header">{{ title }}</h5>
       <div class="card-body">
         <p v-html="description" class="card-text"></p>
-        <RouterLink :to="{ name: 'post', params: { postId: id } }" class="btn btn-primary"
+        <RouterLink :to="{ name: 'category-post', params: { postId: id } }" class="btn btn-primary"
           >Acessar</RouterLink
         >
       </div>

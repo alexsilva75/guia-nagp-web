@@ -15,12 +15,20 @@ watch(
 )
 </script>
 <template>
-  <div class="container pb-5">
-    <SearchResultItem
-      v-bind:key="(result as any).id"
-      v-for="result in searchStore.results"
-      :title="(result as any).title.rendered"
-      :id="(result as any).id"
-    />
+  <div class="container-fluid pb-5">
+    <div class="row">
+      <SearchResultItem
+        v-bind:key="(result as any).id"
+        v-for="result in searchStore.results"
+        :title="(result as any).title.rendered"
+        :description="(result as any).excerpt.rendered"
+        :id="(result as any).id"
+      />
+    </div>
   </div>
 </template>
+<style scoped>
+.container-fluid {
+  padding: 0 64px;
+}
+</style>
