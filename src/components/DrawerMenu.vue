@@ -31,6 +31,9 @@ const closeDrawerAndNavigate = (categoryId: number) => {
       ></button>
     </div>
     <div class="offcanvas-body">
+      <li class="list-group-item text-light">
+        <RouterLink to="/policy" class="nav-link" href="#"> Política de Privacidade</RouterLink>
+      </li>
       <ul class="list-group list-group-flush">
         <li
           v-bind:key="(category as any).id"

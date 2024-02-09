@@ -6,6 +6,7 @@ import LoginView from '@/views/LoginView.vue'
 import AdminDashboardView from '@/views/AdminDashboardView.vue'
 import SearchTermListView from '@/views/SearchTermListView.vue'
 import CategoryViewVue from '@/views/CategoryView.vue'
+import PrivacyPolicyViewVue from '@/views/PrivacyPolicyView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,11 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: LoginView
+    },
+    {
+      path: '/policy',
+      name: 'policy',
+      component: PrivacyPolicyViewVue
     },
     {
       path: '/category/:categoryId',
