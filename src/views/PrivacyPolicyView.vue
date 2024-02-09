@@ -4,16 +4,14 @@
 
   <p>
     A presente Política de Privacidade contém informações sobre coleta, uso, armazenamento,
-    tratamento e proteção dos dados pessoais dos usuários e visitantes do OU aplicativo ____ OU/E
-    site ____, com a finalidade de demonstrar absoluta transparência quanto ao assunto e esclarecer
-    a todos interessados sobre os tipos de dados que são coletados, os motivos da coleta e a forma
-    como os usuários podem gerenciar ou excluir as suas informações pessoais.
+    tratamento e proteção dos dados pessoais dos usuários e visitantes do Guia NAGP, com a
+    finalidade de demonstrar absoluta transparência quanto ao assunto e esclarecer a todos
+    interessados sobre os tipos de dados que são coletados, os motivos da coleta e a forma como os
+    usuários podem gerenciar ou excluir as suas informações pessoais.
   </p>
   <p>
-    Esta Política de Privacidade aplica-se a todos os usuários e visitantes do OU aplicativo ____ OU
-    site ____ e integra os Termos e Condições Gerais de Uso do OU aplicativo ___ OU site ____,
-    devidamente inscrita no CNPJ sob o nº ___, situado em _____ (endereço completo), doravante
-    nominada ____.
+    Esta Política de Privacidade aplica-se a todos os usuários e visitantes do Guia NAGP e integra
+    os Termos e Condições Gerais de Uso do Guia NAGP.
   </p>
   <p>
     O presente documento foi elaborado em conformidade com a Lei Geral de Proteçâo de Dados Pessoais
@@ -24,52 +22,52 @@
   <h2>SEÇÃO 2 - COMO RECOLHEMOS OS DADOS PESSOAIS DO USUÁRIO E DO VISITANTE?</h2>
   <p>Os dados pessoais do usuário e visitante são recolhidos pela plataforma da seguinte forma:</p>
 
-  <p>(Realizar pergunta de múltipla escolha com opção outras)</p>
-  <p>
+  <!-- <p>(Realizar pergunta de múltipla escolha com opção outras)</p> -->
+  <!-- <p>
     Quando o usuário cria uma conta/perfil na plataforma ___: esses dados são os dados de
     identificação básicos, como ___ (exemplo: e-mail, nome completo, cidade de residência e
     profissão). A partir deles, podemos identificar o usuário e o visitante, além de garantir uma
     maior segurança e bem-estar às suas necessidade. Ficam cientes os usuários e visitantes de que
     seu perfil na plataforma estará acessível a todos demais usuários e visitantes da plataforma
     ___.
-  </p>
+  </p> -->
   <p>
-    Quando um usuário e visitante acessa OU páginas do site __ OU o aplicativo ___: as informações
-    sobre interação e acesso são coletadas pela empresa para garantir uma melhor experiência ao
-    usuário e visitante. Estes dados podem tratar sobre as palavras-chaves utilizadas em uma busca,
-    o compartilhamento de um documento específico, comentários, visualizações de páginas, perfis, a
-    URL de onde o usuário e visitante provêm, o navegador que utilizam e seus IPs de acesso, dentre
-    outras que poderão ser armazenadas e retidas.
+    Quando um usuário e visitante acessa OU páginas do Guia NAGP: as informações sobre interação e
+    acesso são coletadas para garantir uma melhor experiência ao usuário e visitante. Estes dados
+    podem tratar sobre as palavras-chaves utilizadas em uma busca, o compartilhamento de um
+    documento específico, comentários, visualizações de páginas, perfis, a URL de onde o usuário e
+    visitante provêm, o navegador que utilizam e seus IPs de acesso, dentre outras que poderão ser
+    armazenadas e retidas.
   </p>
-  <p>
+  <!-- <p>
     Por intermédio de terceiro: a plataforma ____ recebe dados de terceiros, como ___ (indique de
     quem a plataforma recebe dados, por exemplo, Facebook e Google), quando um usuário faz login com
     o seu perfil de um desses sites. A utilização desses dados é autorizada previamente pelos
     usuários junto ao terceiro em questão.
-  </p>
+  </p> -->
   <p>outras</p>
   <p>SEÇÃO 3 - QUAIS DADOS PESSOAIS RECOLHEMOS SOBRE O USUÁRIO E VISITANTE?</p>
   <p>Os dados pessoais do usuário e visitante recolhidos são os seguintes:</p>
 
-  <p>(Realizar pergunta de múltipla escolha com opção outras)</p>
-  <p>
+  <!-- <p>(Realizar pergunta de múltipla escolha com opção outras)</p> -->
+  <!-- <p>
     Dados para a criação da conta/perfil na plataforma ___: ___ (exemplo: e-mail, nome completo,
     cidade de residência e profissão).
-  </p>
+  </p> -->
   <p>
-    Dados para otimização da navegação: ____ (exemplo: acesso a páginas, palavras-chave utilizadas
-    na busca, recomendações, comentários, interação com outros perfis e usuários, perfis seguidos,
-    endereço de IP).
+    Dados para otimização da navegação: acesso a páginas, palavras-chave utilizadas na busca,
+    recomendações, comentários, interação com outros perfis e usuários, perfis seguidos, endereço de
+    IP.
   </p>
-  <p>
+  <!-- <p>
     Dados para concretizar transações: dados referentes ao pagamento e transações, tais como, número
     do cartão de crédito e outras informações sobre o cartão, além dos pagamentos efetuados.
   </p>
   <p>
     Newsletter: o e-mail cadastrado pelo visitante que optar por se inscrever na Newsletter será
     coletado e armazenado até que o usuário solicite o descadastro.
-  </p>
-  <p>
+  </p> -->
+  <!-- <p>
     Dados sensíveis: a plataforma poderá coletar os seguintes dados sensíveis do usuário -
     ___________ (exemplo: origem étnica ou racial, opinião política, convicção religiosa, dados
     genéticos, dados relativos à saúde, orientação sexual)
@@ -79,25 +77,25 @@
     prestação de serviços entre a plataforma e o usuário e visitante poderão ser coletados e
     armazenados dados relativos a execução contratual, inclusive as comunicações realizada entre a
     empresa e o usuário.
-  </p>
-  <p>outras</p>
+  </p> -->
+  <!-- <p>outras</p> -->
   <p>SEÇÃO 3 - PARA QUE FINALIDADES UTILIZAMOS OS DADOS PESSOAIS DO USUÁRIO E VISITANTE?</p>
-  <p>(Realizar questão múltipla escolha com outras)</p>
+  <!-- <p>(Realizar questão múltipla escolha com outras)</p> -->
   <p>
-    Os dados pessoais do usuário e do visitante coletados e armazenados pela plataforma ____ tem por
-    finalidade:
+    Os dados pessoais do usuário e do visitante coletados e armazenados pela plataforma Guia NAGP
+    tem por finalidade:
   </p>
-  <p>
+  <!-- <p>
     Bem-estar do usuário e visitante: aprimorar o produto e/ou serviço oferecido, facilitar,
     agilizar e cumprir os compromissos estabelecidos entre o usuário e a empresa, melhorar a
     experiência dos usuários e fornecer funcionalidades específicas a depender das características
     básicas do usuário.
-  </p>
+  </p> -->
   <p>
     Melhorias da plataforma: compreender como o usuário utiliza os serviços da plataforma, para
     ajudar no desenvolvimento de negócios e técnicas.
   </p>
-  <p>Anúncios: apresentar anúncios personalizados para o usuário com base nos dados fornecidos.</p>
+  <!-- <p>Anúncios: apresentar anúncios personalizados para o usuário com base nos dados fornecidos.</p>
   <p>
     Comercial: os dados são usados para personalizar o conteúdo oferecido e gerar subsídio à
     plataforma para a melhora da qualidade no funcionamento dos serviços.
@@ -105,15 +103,15 @@
   <p>
     Previsão do perfil do usuário: tratamento automatizados de dados pessoais para avaliar o uso na
     plataforma.
-  </p>
-  <p>
+  </p> -->
+  <!-- <p>
     Dados de cadastro: para permitir o acesso do usuário a determinados conteúdos da plataforma,
     exclusivo para usuários cadastrados
   </p>
   <p>
     Dados de contrato: conferir às partes segurança jurídica e facilitar a conclusão do negócio.
   </p>
-  <p>Outras</p>
+  <p>Outras</p> -->
   <p>
     O tratamento de dados pessoais para finalidades não previstas nesta Política de Privacidade
     somente ocorrerá mediante comunicação prévia ao usuário, de modo que os direitos e obrigações
@@ -152,11 +150,11 @@
     dados pessoais de acessos não autorizados e de situações de destruição, perda, alteração,
     comunicação ou difusão de tais dados.
   </p>
-  <p>
+  <!-- <p>
     Os dados relativas a cartões de crédito são criptografados usando a tecnologia "secure socket
     layer" (SSL) que garante a transmissão de dados de forma segura e confidencial, de modo que a
     transmissão dos dados entre o servidor e o usuário ocorre de maneira cifrada e encriptada.
-  </p>
+  </p> -->
   <p>
     A plataforma não se exime de responsabilidade por culpa exclusiva de terceiro, como em caso de
     ataque de hackers ou crackers, ou culpa exclusiva do usuário, como no caso em que ele mesmo
@@ -174,12 +172,12 @@
     realizadas pelo próprio usuário, tais ações são compartilhadas publicamente com os outros
     usuários.
   </p>
-  <p>
+  <!-- <p>
     Os dados do perfil do usuário são compartilhados publicamente em sistemas de busca e dentro da
     plataforma, sendo permitido ao usuário modificar tal configuração para que seu perfil não
     apareça nos resultados de busca de tais ferramentas.
-  </p>
-  <p>SEÇÃO 6 - OS DADOS PESSOAIS ARMAZENADOS SERÃO TRANSFERIDOS A TERCEIROS?</p>
+  </p> -->
+  <!-- <p>SEÇÃO 6 - OS DADOS PESSOAIS ARMAZENADOS SERÃO TRANSFERIDOS A TERCEIROS?</p>
   <p>
     Os dados pessoais (não) podem ser compartilhados (com terceiros) (com as seguintes pessoas
     (físicas) (jurídicas): _________, CPF/CNPJ _________.
@@ -212,7 +210,7 @@
     Política de Privacidade ou pelos Termos de Serviço da nossa plataforma. Não somos responsáveis
     pelas práticas de privacidade de outros sites e lhe incentivamos a ler as declarações de
     privacidade deles.
-  </p>
+  </p> -->
   <p>SEÇÃO 07 – COOKIES OU DADOS DE NAVEGAÇÃO</p>
 
   <p>
@@ -223,8 +221,8 @@
     posteriormente a fim de personalizar os serviços da plataforma.
   </p>
   <p>
-    O usuário e o visitante da plataforma ___ manifesta conhecer e aceitar que pode ser utilizado um
-    sistema de coleta de dados de navegação mediante à utilização de cookies.
+    O usuário e o visitante da plataforma Guia NAGP manifesta conhecer e aceitar que pode ser
+    utilizado um sistema de coleta de dados de navegação mediante à utilização de cookies.
   </p>
   <p>
     O cookie persistente permanece no disco rígido do usuário e visitante depois que o navegador é
@@ -246,7 +244,9 @@
   </p>
   <p>
     O usuário tem direito de retirar o seu consentimento a qualquer tempo, para tanto deve entrar em
-    contato através do e-mail _______ ou por correio enviado ao seguinte endereço: ________
+    contato através do e-mail alexsandro.ssantos75@gmail.com ou por correio enviado ao seguinte
+    endereço: Instituto Federal de Educação, Ciência e Tecnologia Baiano – Campus Governador
+    Mangabeira Rua Waldemar Mascarenhas, s/n – Portão (Estrada Velha da Chesf) - CEP 44350-000
   </p>
   <p>SEÇÃO 9 - ALTERAÇÕES PARA ESSA POLÍTICA DE PRIVACIDADE</p>
   <p>
@@ -269,7 +269,7 @@
     o Direito brasileiro.
   </p>
   <p>
-    Os eventuais litígios deverão ser apresentados no foro da comarca em que se encontra a sede da
-    empresa.
+    Os eventuais litígios deverão ser apresentados no foro da comarca de Santo Amaro da Purificação
+    - Bahia.
   </p>
 </template>
