@@ -5,6 +5,7 @@ import { useCategoryStore } from '@/stores/category'
 import SearchByCategoryResultItem from '@/components/SearchByCategoryResultItem.vue'
 
 const props = defineProps<{ categoryId: string }>()
+const subCategories = ref([])
 
 const searchStore = useSearchStore()
 const categoryStore = useCategoryStore()
@@ -18,6 +19,16 @@ onMounted(async () => {
 
   title.value = category.name
   console.log('Selected Category: ', props.categoryId)
+  subCategories.value = searchStore.resultsByCategory.sort((item1, item2) => {
+    if ((item1 as any).title.rendered < (item2 as any).title.rendered) {
+      return -1
+    } else if ((item1 as any).title.rendered > (item2 as any).title.rendered) {
+      return 1
+    }
+    return 0
+  })
+
+  console.log('Sub-categories: ', subCategories.value)
 })
 </script>
 
@@ -30,7 +41,7 @@ onMounted(async () => {
         :title="(result as any).title.rendered"
         :description="(result as any).excerpt.rendered"
         v-bind:key="(result as any).id"
-        v-for="result in searchStore.resultsByCategory"
+        v-for="result in subCategories"
       />
     </div>
   </main>
