@@ -28,7 +28,7 @@ export const useSearchStore = defineStore('search', () => {
 
   async function fetchByCategory(id: number) {
     isLoadingSearch.value = true
-    const response = await fetch(options.baseURL + 'api/v1/by-category/' + id)
+    const response = await fetch(options.baseURL + 'api/v1/by-category/' + id + "?orderby=title&order=asc")
 
     const responseData = await response.json()
 
