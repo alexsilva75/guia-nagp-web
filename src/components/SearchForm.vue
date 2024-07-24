@@ -26,9 +26,20 @@ const onSearchTypeHander = () => {
 
 <template>
   <div class="search-group">
-    <h1 class="search-head text-center py-4">
-      Base de Conhecimento do Núcleo de Apoio à Gestão de Pessoas
-    </h1>
+    <div class="search-head text-center py-4">
+      <h5>
+      Olá! Você está no Núcleo de Apoio à Gestão de Pessoas do IF Baiano Campus Governador Mangabeira
+      </h5>
+
+      <h2 class="text-success my-4">
+        <strong>COMO POSSO AJUDAR?</strong>
+      </h2>
+
+      <h6 class="text-muted">
+        Aqui você encontra informações relevantes sobre diversos benefícios concedidos ao servidor público federal
+      </h6>
+    </div>
+
     <div class="input-group mb-3 px-md-5">
       <input
         type="text"

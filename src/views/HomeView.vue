@@ -13,7 +13,14 @@ const categoryStore = useCategoryStore()
 <template>
   <div class="container-fluid">
     <div class="row py-5">
-      <div class="col">
+      <div class="col-12 col-md-8 col-lg-6 mx-auto">
+        <img
+          class="img-fluid mx-auto" alt="NAGP"
+          src="https://nagp.alexsilvapro.com.br/wp-content/uploads/2024/07/NAGP_Cabecalho_2.jpg"
+        />
+      </div>
+
+      <div class="col-12">
         <SearchForm />
       </div>
     </div>
