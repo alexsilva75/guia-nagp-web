@@ -9,17 +9,26 @@ import IconMenu from './icons/IconMenu.vue'
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <RouterLink to="/" class="navbar-brand text-light" href="#"
-        ><button
+      <RouterLink to="/" class="navbar-brand text-light" href="#">
+        <button
           class="btn"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight"
         >
-          <IconMenu /></button
-        >Guia NAGP</RouterLink
-      >
+          <IconMenu />
+        </button>
+
+        <div class="d-inline-block rounded-3 bg-light p-1 px-0 me-2">
+          <img
+            alt="NAGP" height="44"
+            src="https://nagp.alexsilvapro.com.br/wp-content/uploads/2023/11/Instituto_Federal_Baiano_-_Marca_Vertical_2015.svg_.png"
+          />
+        </div>
+
+        <h5 class="d-inline-block text-light">Instituto Federal Baiano</h5>
+      </RouterLink>
       <!-- <button
         class="navbar-toggler"
         type="button"
@@ -62,12 +71,6 @@ import IconMenu from './icons/IconMenu.vue'
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
         </ul>
-        <div class="d-flex">
-          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button> -->
-
-          <img src="../assets/ifbaiano.png" class="pe-4" height="44" />
-        </div>
       </div>
     </div>
   </nav>
