@@ -7,19 +7,23 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="col-sm-6 mb-4 d-flex">
-    <div class="card col">
-      <div class="card-body position-relative pb-5">
-        <h5 class="card-title">{{ category?.name }}</h5>
-        <p class="card-text">
-          {{ category?.description }}
-        </p>
-        <RouterLink
-          :to="{ name: 'category', params: { categoryId: category?.id } }"
-          class="btn btn-primary position-absolute btn-action"
-          >Acessar</RouterLink
-        >
-      </div>
+  <div class="col-sm-6 col-md-4 mb-4 d-flex">
+    <div class="card col ratio ratio-16x9">
+      <RouterLink
+        :to="{ name: 'category', params: { categoryId: category?.id } }"
+        :title="category?.description"
+        class="card-body flex flex-column align-content-center"
+        style="text-decoration: none"
+        :style="!!category?.acf?.thumbnail_url && {
+          backgroundImage: `url(${category?.acf?.thumbnail_url})`,
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+        }"
+      >
+        <h5 v-if="!category?.acf?.thumbnail_url" class="card-title text-center">
+          {{ category?.name }}
+        </h5>
+      </RouterLink>
     </div>
   </div>
 </template>
