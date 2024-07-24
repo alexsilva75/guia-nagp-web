@@ -35,14 +35,17 @@ onMounted(async () => {
 <template>
   <main>
     <div class="container-fluid">
-      <h2 class="mt-4">{{ title }}</h2>
-      <SearchByCategoryResultItem
-        :id="(result as any).id"
-        :title="(result as any).title.rendered"
-        :description="(result as any).excerpt.rendered"
-        v-bind:key="(result as any).id"
-        v-for="result in subCategories"
-      />
+      <h3 class="my-4">{{ title }}</h3>
+
+      <div class="row">
+        <SearchByCategoryResultItem
+          :id="(result as any).id"
+          :title="(result as any).title.rendered"
+          :description="(result as any).excerpt.rendered"
+          v-bind:key="(result as any).id"
+          v-for="result in subCategories"
+        />
+      </div>
     </div>
   </main>
 </template>
