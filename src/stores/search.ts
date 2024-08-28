@@ -10,6 +10,11 @@ export const useSearchStore = defineStore('search', () => {
   const isLoadingSearch = ref(false)
   const termResults = ref([])
   //const doubleCount = computed(() => count.value * 2)
+  async function reset() {
+    results.value = []
+    isLoadingSearch.value = false
+  }
+
   async function performSearch(term: string) {
     isLoadingSearch.value = true
     const response = await fetch(options.baseURL + 'api/v1/search?search=' + term)
@@ -73,6 +78,7 @@ export const useSearchStore = defineStore('search', () => {
     console.log('Update Term Response: ', response)
   }
   return {
+    reset,
     results,
     resultsByCategory,
     fetchByCategory,
